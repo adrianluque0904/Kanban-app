@@ -17,25 +17,25 @@ Tablero de tareas estilo Trello construido desde cero con MySQL, Node.js y JavaS
 
 ## Cómo ejecutarlo en local
 
-1. Clona el repositorio
+1. Clonar el repositorio
 ```bash
    git clone https://github.com/adrianluque0904/Kanban-app.git
    cd Kanban-app
 ```
 
-2. Instala las dependencias
+2. Instalar las dependencias
 ```bash
    npm install
 ```
 
-3. Crea un archivo `.env` en la raíz con tus datos de MySQL
-   DB_HOST=localhost
+3. Crear un archivo `.env` en la raíz con los datos de MySQL
+DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=tu_contraseña
 DB_NAME=kanban_db
 PORT=3000
 
-4. Importa la base de datos en MySQL Workbench
+4. Importar la base de datos en MySQL Workbench
 ```sql
    CREATE DATABASE kanban_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
    USE kanban_db;
@@ -59,12 +59,12 @@ PORT=3000
    INSERT INTO columnas (nombre) VALUES ('Pendiente'), ('En Progreso'), ('Terminado');
 ```
 
-5. Arranca el servidor
+5. Arrancar el servidor
 ```bash
    node server.js
 ```
 
-6. Abre el navegador en `http://localhost:3000`
+6. Abrir el navegador en `http://localhost:3000`
 
 ## Estructura del proyecto
 kanban-app/
