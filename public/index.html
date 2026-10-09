@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablero de Tareas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="board-header">
+    <h1>Tablero de Tareas</h1>
+    <p class="subtitle">Organiza tu trabajo, una ficha a la vez</p>
+  </header>
+
+  <main class="board" id="board">
+    <!-- Las columnas se generan dinámicamente desde script.js -->
+  </main>
+
+  <div class="new-task-bar">
+    <input type="text" id="nuevo-titulo" placeholder="Título de la nueva tarea..." maxlength="200">
+    <input type="text" id="nueva-descripcion" placeholder="Descripción (opcional)">
+    <button id="btn-crear">Añadir tarea</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
